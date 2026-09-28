@@ -26,13 +26,13 @@ html, body { margin: 0; height: 100%; background: #0E1729; overflow: hidden; fon
 .deck th { font-weight: 800; }
 .deck tr:last-child td { border-bottom: none; }
 .bar { position: fixed; left: 0; right: 0; bottom: 0; height: 56px; display: flex; align-items: center; justify-content: center; gap: 12px; color: #C9D1DE; font-size: 16px; }
-.bar button { font: inherit; font-weight: 700; color: #F4EFE4; background: #1E2F52; border: 1px solid #2F4470; border-radius: 8px; height: 36px; min-width: 44px; padding: 0 14px; cursor: pointer; }
-.bar button:hover { background: #2A3F6A; }
-.bar button:focus-visible { outline: 2px solid #F4A261; outline-offset: 2px; }
+.bar button, .bar a { display: inline-flex; align-items: center; text-decoration: none; font: inherit; font-weight: 700; color: #F4EFE4; background: #1E2F52; border: 1px solid #2F4470; border-radius: 8px; height: 36px; min-width: 44px; padding: 0 14px; cursor: pointer; }
+.bar button:hover, .bar a:hover { background: #2A3F6A; }
+.bar button:focus-visible, .bar a:focus-visible { outline: 2px solid #F4A261; outline-offset: 2px; }
 .bar .count { min-width: 72px; text-align: center; font-variant-numeric: tabular-nums; }
 .notes { position: fixed; left: 50%; bottom: 64px; transform: translateX(-50%); width: min(960px, calc(100% - 32px)); max-height: 40vh; overflow: auto; padding: 16px 20px; background: #F4EFE4; color: #15233F; border-radius: 12px; font-size: 18px; line-height: 1.5; box-shadow: 0 10px 30px rgba(0,0,0,.4); }
 .notes[hidden] { display: none; }
-@media (max-width: 600px) { .bar .hint { display: none; } }
+@media (max-width: 720px) { .bar { gap: 6px; font-size: 14px; } .bar .hint, #fsBtn { display: none; } .bar button, .bar a { padding: 0 10px; } }
 </style>
 </head>
 <body>
@@ -822,6 +822,7 @@ html, body { margin: 0; height: 100%; background: #0E1729; overflow: hidden; fon
 <button id="next" aria-label="Next slide">&#8250;</button>
 <button id="notesBtn" aria-pressed="false">Notes</button>
 <button id="fsBtn">Full screen</button>
+<a href="Articles-A-An-The.pptx" download>Download PowerPoint</a>
 <span class="hint">Use &larr; &rarr; keys</span>
 </nav>
 <script>
