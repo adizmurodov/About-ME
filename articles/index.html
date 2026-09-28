@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Articles: A, An &amp; The</title>
+<meta name="description" content="A clear, step-by-step presentation about the English articles a, an and the, and when to use no article.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&amp;display=swap">
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; background: #0E1729; overflow: hidden; font-family: 'Nunito Sans', Arial, sans-serif; }
+.stage { position: fixed; left: 0; right: 0; top: 0; bottom: 56px; display: flex; align-items: center; justify-content: center; }
+.deck { position: relative; width: 1920px; height: 1080px; flex: none; transform-origin: center center; box-shadow: 0 20px 60px rgba(0,0,0,.45); }
+.deck > section { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; overflow: hidden; }
+.deck > section:not(.active) { display: none !important; }
+.deck h1, .deck h2, .deck h3, .deck p, .deck ul, .deck ol { margin: 0; }
+.deck h1 { line-height: 1.1; } .deck h2 { line-height: 1.15; } .deck h3 { line-height: 1.2; }
+.deck p, .deck li { line-height: 1.4; }
+.deck ul { padding-left: 1.1em; }
+.deck aside { display: none; }
+.deck table { border-collapse: separate; border-spacing: 0; overflow: hidden; }
+.deck th, .deck td { padding: .35em .6em; text-align: left; border-bottom: 1px solid rgba(21,35,63,.12); }
+.deck th { font-weight: 800; }
+.deck tr:last-child td { border-bottom: none; }
+.bar { position: fixed; left: 0; right: 0; bottom: 0; height: 56px; display: flex; align-items: center; justify-content: center; gap: 12px; color: #C9D1DE; font-size: 16px; }
+.bar button { font: inherit; font-weight: 700; color: #F4EFE4; background: #1E2F52; border: 1px solid #2F4470; border-radius: 8px; height: 36px; min-width: 44px; padding: 0 14px; cursor: pointer; }
+.bar button:hover { background: #2A3F6A; }
+.bar button:focus-visible { outline: 2px solid #F4A261; outline-offset: 2px; }
+.bar .count { min-width: 72px; text-align: center; font-variant-numeric: tabular-nums; }
+.notes { position: fixed; left: 50%; bottom: 64px; transform: translateX(-50%); width: min(960px, calc(100% - 32px)); max-height: 40vh; overflow: auto; padding: 16px 20px; background: #F4EFE4; color: #15233F; border-radius: 12px; font-size: 18px; line-height: 1.5; box-shadow: 0 10px 30px rgba(0,0,0,.4); }
+.notes[hidden] { display: none; }
+@media (max-width: 600px) { .bar .hint { display: none; } }
+</style>
+</head>
+<body>
+<main class="stage" aria-live="polite">
+<div class="deck" id="deck">
+<section id="cover" data-transition="fade" style="background:#15233F; color:#F4EFE4; font-family:'Nunito Sans', Arial, sans-serif; padding:128px; display:flex; flex-direction:column; justify-content:center; gap:40px">
+<p style="font-size:24px; font-weight:800; letter-spacing:4px; text-transform:uppercase; color:#F4A261">English Grammar Essentials</p>
+<h1 style="font-family:'Domine', Georgia, serif; font-size:144px; font-weight:700; line-height:1.05; color:#F4EFE4"><span style="color:#8DB0F5">A</span>, <span style="color:#8DB0F5">An</span> &amp; <span style="color:#F4A261">The</span></h1>
+<p style="width:1240px; font-size:40px; line-height:1.4; color:#C9D1DE">A clear, step-by-step guide to English articles: what they mean, when to use them, and when to use no article at all.</p>
+<div style="display:flex; flex-direction:row; gap:24px">
+<p style="font-size:24px; font-weight:700; padding:12px 28px; border:2px solid #8DB0F5; border-radius:40px; color:#8DB0F5">A / AN · any one</p>
+<p style="font-size:24px; font-weight:700; padding:12px 28px; border:2px solid #F4A261; border-radius:40px; color:#F4A261">THE · the specific one</p>
+<p style="font-size:24px; font-weight:700; padding:12px 28px; border:2px solid #B9C2D0; border-radius:40px; color:#B9C2D0">Ø · no article</p>
+</div>
+<aside>Welcome. Today we will learn the three English articles: a, an and the. We will also learn when we use no article at all. Look at the colors: blue is always a / an, orange is always the, and grey (the symbol Ø) means no article. These colors stay the same on every slide. By the end, you will be able to choose the right article with confidence.</aside>
+</section>
+<section id="agenda" data-transition="fade" style="background:#FAF7F0; color:#15233F; font-family:'Nunito Sans', Arial, sans-serif; padding:128px 128px 160px; display:flex; flex-direction:column; gap:56px">
+<div style="display:flex; flex-direction:column; gap:12px">
+<p style="font-size:24px; font-weight:800; letter-spacing:3px; text-transform:uppercase; color:#636B78">Overview</p>
+<h2 style="font-family:'Domine', Georgia, serif; font-size:64px; font-weight:700; line-height:1.1; color:#15233F">What you will learn</h2>
+</div>
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:48px">
+<div style="display:flex; flex-direction:row; gap:28px; align-items:start">
+<p style="width:80px; font-family:'Domine', Georgia, serif; font-size:40px; font-weight:700; line-height:1.2; color:#A2470F">01</p>
+<div style="flex:1; display:flex; flex-direction:column; gap:8px">
+<h3 style="font-size:40px; font-weight:800; line-height:1.2; color:#15233F">The basics</h3>
+<p style="font-size:32px; line-height:1.35; color:#3F4A5C">What an article is and what it tells the listener.</p>
+</div>
+</div>
+<div style="display:flex; flex-direction:row; gap:28px; align-items:start">
+<p style="width:80px; font-family:'Domine', Georgia, serif; font-size:40px; font-weight:700; line-height:1.2; color:#A2470F">02</p>
+<div style="flex:1; display:flex; flex-direction:column; gap:8px">
+<h3 style="font-size:40px; font-weight:800; line-height:1.2; color:#15233F">A or An?</h3>
+<p style="font-size:32px; line-height:1.35; color:#3F4A5C">How the first sound of the next word decides.</p>
+</div>
+</div>
+<div style="display:flex; flex-direction:row; gap:28px; align-items:start">
+<p style="width:80px; font-family:'Domine', Georgia, serif; font-size:40px; font-weight:700; line-height:1.2; color:#A2470F">03</p>
+<div style="flex:1; display:flex; flex-direction:column; gap:8px">
+<h3 style="font-size:40px; font-weight:800; line-height:1.2; color:#15233F">Using A / AN</h3>
+<p style="font-size:32px; line-height:1.35; color:#3F4A5C">Six common situations, and one important limit.</p>
+</div>
+</div>
+<div style="display:flex; flex-direction:row; gap:28px; align-items:start">
+<p style="width:80px; font-family:'Domine', Georgia, serif; font-size:40px; font-weight:700; line-height:1.2; color:#A2470F">04</p>
+<div style="flex:1; display:flex; flex-direction:column; gap:8px">
+<h3 style="font-size:40px; font-weight:800; line-height:1.2; color:#15233F">Using THE</h3>
+<p style="font-size:32px; line-height:1.35; color:#3F4A5C">Specific things, unique things and place names.</p>
+</div>
+</div>
+<div style="display:flex; flex-direction:row; gap:28px; align-items:start">
+<p style="width:80px; font-family:'Domine', Georgia, serif; font-size:40px; font-weight:700; line-height:1.2; color:#A2470F">05</p>
+<div style="flex:1; display:flex; flex-direction:column; gap:8px">
+<h3 style="font-size:40px; font-weight:800; line-height:1.2; color:#15233F">No article (Ø)</h3>
+<p style="font-size:32px; line-height:1.35; color:#3F4A5C">General ideas, meals, sports, names and more.</p>
+</div>
+</div>
+<div style="display:flex; flex-direction:row; gap:28px; align-items:start">
+<p style="width:80px; font-family:'Domine', Georgia, serif; font-size:40px; font-weight:700; line-height:1.2; color:#A2470F">06</p>
+<div style="flex:1; display:flex; flex-direction:column; gap:8px">
+<h3 style="font-size:40px; font-weight:800; line-height:1.2; color:#15233F">Putting it together</h3>
+<p style="font-size:32px; line-height:1.35; color:#3F4A5C">One simple chart, common mistakes and practice.</p>
+</div>
+</div>
+</div>
+<p style="position:absolute; left:128px; bottom:64px; width:1200px; font-size:24px; color:#636B78">English Articles · A, An &amp; The</p>
+<p style="position:absolute; right:128px; bottom:64px; width:200px; font-size:24px; color:#636B78; text-align:right">02</p>
+<aside>This is our plan. We start with the basics, then learn how to choose between a and an. Next we look at when to use a / an, when to use the, and when to use no article. At the end we put everything together in one chart, look at common mistakes, and practice with a short quiz.</aside>
+</section>
+<section id="what-is" data-transition="fade" style="background:#FAF7F0; color:#15233F; font-family:'Nunito Sans', Arial, sans-serif; padding:128px 128px 160px; display:flex; flex-direction:column; gap:40px">
+<div style="display:flex; flex-direction:column; gap:12px">
+<p style="font-size:24px; font-weight:800; letter-spacing:3px; text-transform:uppercase; color:#636B78">01 · The basics</p>
+<h2 style="font-family:'Domine', Georgia, serif; font-size:64px; font-weight:700; line-height:1.1; color:#15233F">What is an article?</h2>
+</div>
+<p style="font-size:40px; line-height:1.4; color:#3F4A5C">An article is a small word that comes <b>before a noun</b>. It tells the listener: do you mean <b>any one</b> thing, or <b>one specific</b> thing?</p>
+<div style="display:flex; flex-direction:row; gap:32px">
+<div style="flex:1; display:flex; flex-direction:column; gap:12px; background:#E4EBFA; padding:36px; border-radius:16px">
+<p style="font-size:24px; font-weight:800; letter-spacing:2px; text-transform:uppercase; color:#2A5BC4">Indefinite</p>
+<h3 style="font-family:'Domine', Georgia, serif; font-size:64px; font-weight:700; line-height:1.1; color:#2A5BC4">a</h3>
+<p style="font-size:32px; line-height:1.35; color:#15233F">any one thing, not a specific one</p>
+<p style="font-size:32px; font-weight:800; line-height:1.35; color:#15233F">a cat · a book</p>
+</div>
+<div style="flex:1; display:flex; flex-direction:column; gap:12px; background:#E4EBFA; padding:36px; border-radius:16px">
+<p style="font-size:24px; font-weight:800; letter-spacing:2px; text-transform:uppercase; color:#2A5BC4">Indefinite</p>
+<h3 style="font-family:'Domine', Georgia, serif; font-size:64px; font-weight:700; line-height:1.1; color:#2A5BC4">an</h3>
+<p style="font-size:32px; line-height:1.35; color:#15233F">the same as a, but before a vowel sound</p>
+<p style="font-size:32px; font-weight:800; line-height:1.35; color:#15233F">an apple · an hour</p>
+</div>
+<div style="flex:1; display:flex; flex-direction:column; gap:12px; background:#FBE8DA; padding:36px; border-radius:16px">
+<p style="font-size:24px; font-weight:800; letter-spacing:2px; text-transform:uppercase; color:#A2470F">Definite</p>
+<h3 style="font-family:'Domine', Georgia, serif; font-size:64px; font-weight:700; line-height:1.1; color:#A2470F">the</h3>
+<p style="font-size:32px; line-height:1.35; color:#15233F">a specific thing: we both know which one</p>
+<p style="font-size:32px; font-weight:800; line-height:1.35; color:#15233F">the cat · the sun</p>
+</div>
+<div style="flex:1; display:flex; flex-direction:column; gap:12px; background:#ECEAE6; padding:36px; border-radius:16px">
+<p style="font-size:24px; font-weight:800; letter-spacing:2px; text-transform:uppercase; color:#5E6675">No article</p>
+<h3 style="font-family:'Domine', Georgia, serif; font-size:64px; font-weight:700; line-height:1.1; color:#5E6675">Ø</h3>
+<p style="font-size:32px; line-height:1.35; color:#15233F">things in general, and most names</p>
+<p style="font-size:32px; font-weight:800; line-height:1.35; color:#15233F">cats · music · Tashkent</p>
+</div>
+</div>
+<p style="position:absolute; left:128px; bottom:64px; width:1200px; font-size:24px; color:#636B78">English Articles · A, An &amp; The</p>
+<p style="position:absolute; right:128px; bottom:64px; width:200px; font-size:24px; color:#636B78; text-align:right">03</p>
+<aside>An article is a very small word, but it carries important information. It always comes before a noun, or before an adjective + noun, like "a big house". English has two indefinite articles, a and an, which mean "any one". It has one definite article, the, which means "the specific one we both know". And very often we use no article at all. We write this as Ø, which simply means "nothing here".</aside>
+</section>
+<section id="any-vs-specific" data-transition="fade" style="background:#FAF7F0; color:#15233F; font-family:'Nunito Sans', Arial, sans-serif; padding:128px 128px 160px; display:flex; flex-direction:column; gap:40px">
+<div style="display:flex; flex-direction:column; gap:12px">
+<p style="font-size:24px; font-weight:800; letter-spacing:3px; text-transform:uppercase; color:#636B78">01 · The basics</p>
+<h2 style="font-family:'Domine', Georgia, serif; font-size:64px; font-weight:700; line-height:1.1; color:#15233F">Any one, or the specific one?</h2>
+</div>
+<div style="display:flex; flex-direction:row; gap:40px">
+<div style="flex:1; display:flex; flex-direction:column; gap:24px; background:#E4EBFA; padding:48px; border-radius:20px">
+<p style="font-size:40px; font-weight:800; line-height:1.2; color:#2A5BC4">A / AN = any one</p>
+<svg aria-label="Three identical blue pens: any one of them is fine" width="340" height="130" viewBox="0 0 340 130" xmlns="http://www.w3.org/2000/svg"><g fill="#2A5BC4"><rect x="0" y="8" width="270" height="22" rx="5"/><polygon points="270,8 320,19 270,30"/><rect x="0" y="54" width="270" height="22" rx="5"/><polygon points="270,54 320,65 270,76"/><rect x="0" y="100" width="270" height="22" rx="5"/><polygon points="270,100 320,111 270,122"/></g></svg>
+<p style="font-size:40px; font-weight:700; line-height:1.3; color:#15233F">“Can I borrow <span style="color:#2A5BC4"><b>a</b></span> pen?”</p>
+<p style="font-size:32px; line-height:1.4; color:#3F4A5C">Any pen is fine. It doesn’t matter which one.</p>
+</div>
+<div style="flex:1; display:flex; flex-direction:column; gap:24px; background:#FBE8DA; padding:48px; border-radius:20px">
+<p style="font-size:40px; font-weight:800; line-height:1.2; color:#A2470F">THE = the specific one</p>
+<svg aria-label="Three pens: two are grey, one orange pen is the specific one" width="340" height="130" viewBox="0 0 340 130" xmlns="http://www.w3.org/2000/svg"><g fill="#D6CDBE"><rect x="0" y="8" width="270" height="22" rx="5"/><polygon points="270,8 320,19 270,30"/><rect x="0" y="100" width="270" height="22" rx="5"/><polygon points="270,100 320,111 270,122"/></g><g fill="#A2470F"><rect x="0" y="54" width="270" height="22" rx="5"/><polygon points="270,54 320,65 270,76"/></g></svg>
+<p style="font-size:40px; font-weight:700; line-height:1.3; color:#15233F">“Can I borrow <span style="color:#A2470F"><b>the</b></span> pen?”</p>
+<p style="font-size:32px; line-height:1.4; color:#3F4A5C">That exact pen: the one we both know about.</p>
+</div>
+</div>
+<p style="font-size:32px; line-height:1.4; color:#15233F"><b>Same noun, different article, different meaning.</b></p>
+<p style="position:absolute; left:128px; bottom:64px; width:1200px; font-size:24px; color:#636B78">English Articles · A, An &amp; The</p>
+<p style="position:absolute; right:128px; bottom:64px; width:200px; font-size:24px; color:#636B78; text-align:right">04</p>
+<aside>This is the most important idea in the whole lesson. If I say "Can I borrow a pen?", I mean any pen. I don't care which one. If I say "Can I borrow the pen?", I mean one specific pen, for example the pen on your desk that we can both see. The noun "pen" is the same. Only the article changes, and the meaning changes with it.</aside>
+</section>
+<section id="sound-statement" data-transition="fade" style="background:#2A5BC4; color:#F7F4EC; font-family:'Nunito Sans', Arial, sans-serif; padding:128px; display:flex; flex-direction:column; justify-content:center; gap:40px">
+<p style="font-size:24px; font-weight:800; letter-spacing:4px; text-transform:uppercase; color:#DCE6FB">02 · A or An?</p>
+<h2 style="font-family:'Domine', Georgia, serif; font-size:144px; font-weight:700; line-height:1.05; color:#F7F4EC">Sound,<br>not spelling.</h2>
+<p style="width:1300px; font-size:40px; line-height:1.4; color:#EAF0FD">Choose <b>a</b> or <b>an</b> by the first <b>sound</b> of the next word, not by its first letter.</p>
+<aside>Here is the one rule for a and an. We do not look at the first letter of the word. We listen to the first sound. This is why we say "an hour" (the h is silent) but "a university" (it starts with a "you" sound). On the next two slides we will see how this works.</aside>
+</section>
+<section id="a-an-rule" data-transition="fade" style="background:#FAF7F0; color:#15233F; font-family:'Nunito Sans', Arial, sans-serif; padding:128px 128px 160px; display:flex; flex-direction:column; gap:40px">
+<div style="display:flex; flex-direction:column; gap:12px">
+<p style="font-size:24px; font-weight:800; letter-spacing:3px; text-transform:uppercase; color:#636B78">02 · A or An?</p>
+<h2 style="font-family:'Domine', Georgia, serif; font-size:64px; font-weight:700; line-height:1.1; color:#15233F">The rule: listen to the first sound</h2>
+</div>
+<div style="display:flex; flex-direction:row; gap:40px">
+<div style="flex:1; display:flex; flex-direction:column; gap:12px; background:#E4EBFA; padding:48px; border-radius:20px">
+<h3 style="font-family:'Domine', Georgia, serif; font-size:64px; font-weight:700; line-height:1.1; color:#2A5BC4">a</h3>
+<p style="font-size:32px; font-weight:800; line-height:1.35; color:#15233F">+ a consonant sound</p>
+<p style="font-size:24px; line-height:1.4; color:#3F4A5C">b, c, d, f, g, h, k, l, m, n, p, r, s, t…</p>
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:16px; padding:16px 0 0 0">
+<p style="font-size:40px; line-height:1.3"><span style="color:#2A5BC4"><b>a</b></span> book</p>
+<p style="font-size:40px; line-height:1.3"><span style="color:#2A5BC4"><b>a</b></span> car</p>
+<p style="font-size:40px; line-height:1.3"><span style="color:#2A5BC4"><b>a</b></span> dog</p>
+<p style="font-size:40px; line-height:1.3"><span style="color:#2A5BC4"><b>a</b></span> house</p>
+<p style="font-size:40px; line-height:1.3"><span style="color:#2A5BC4"><b>a</b></span> teacher</p>
+<p style="font-size:40px; line-height:1.3"><span style="color:#2A5BC4"><b>a</b></span> red apple</p>
+</div>
+</div>
+<div style="flex:1; display:flex; flex-direction:column; gap:12px; background:#E4EBFA; padding:48px; border-radius:20px">
+<h3 style="font-family:'Domine', Georgia, serif; font-size:64px; font-weight:700; line-height:1.1; color:#2A5BC4">an</h3>
+<p style="font-size:32px; font-weight:800; line-height:1.35; color:#15233F">+ a vowel sound</p>
+<p style="font-size:24px; line-height:1.4; color:#3F4A5C">the sounds of a, e, i, o, u</p>
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:16px; padding:16px 0 0 0">
+<p style="font-size:40px; line-height:1.3"><span style="color:#2A5BC4"><b>an</b></span> apple</p>
+<p style="font-size:40px; line-height:1.3"><span style="color:#2A5BC4"><b>an</b></span> egg</p>
+<p style="font-size:40px; line-height:1.3"><span style="color:#2A5BC4"><b>an</b></span> idea</p>
+<p style="font-size:40px; line-height:1.3"><span style="color:#2A5BC4"><b>an</b></span> orange</p>
+<p style="font-size:40px; line-height:1.3"><span style="color:#2A5BC4"><b>an</b></span> umbrella</p>
+<p style="font-size:40px; line-height:1.3"><span style="color:#2A5BC4"><b>an</b></span> old car</p>
+</div>
+</div>
+</div>
+<p style="font-size:32px; line-height:1.4; color:#3F4A5C; background:#FFFDF9; border:2px solid #E6DFD0; border-radius:16px; padding:20px 32px"><b>Tip:</b> the article looks only at the very next word. <span style="color:#2A5BC4"><b>an</b></span> apple → <span style="color:#2A5BC4"><b>a</b></span> red apple · <span style="color:#2A5BC4"><b>a</b></span> car → <span style="color:#2A5BC4"><b>an</b></span> old car</p>
+<p style="position:absolute; left:128px; bottom:64px; width:1200px; font-size:24px; color:#636B78">English Articles · A, An &amp; The</p>
+<p style="position:absolute; right:128px; bottom:64px; width:200px; font-size:24px; color:#636B78; text-align:right">06</p>
+<aside>Use "a" when the next word starts with a consonant sound, like b, c, d or t. Use "an" when the next word starts with a vowel sound: the sounds of a, e, i, o and u. We use "an" because it is easier to say: "an apple" flows better than "a apple". Look at the tip at the bottom: the article only cares about the word right after it. "An apple" becomes "a red apple", because "red" starts with a consonant sound. "A car" becomes "an old car", because "old" starts with a vowel sound.</aside>
+</section>
+<section id="tricky-sounds" data-transition="fade" style="background:#FAF7F0; color:#15233F; font-family:'Nunito Sans', Arial, sans-serif; padding:128px 128px 160px; display:flex; flex-direction:column; gap:40px">
+<div style="display:flex; flex-direction:column; gap:12px">
+<p style="font-size:24px; font-weight:800; letter-spacing:3px; text-transform:uppercase; color:#636B78">02 · A or An?</p>
+<h2 style="font-family:'Domine', Georgia, serif; font-size:64px; font-weight:700; line-height:1.1; color:#15233F">Tricky words: the letter can fool you</h2>
+</div>
+<div style="display:flex; flex-direction:row; gap:40px">
+<div style="flex:1; display:flex; flex-direction:column; gap:20px; background:#FFFDF9; border:2px solid #E6DFD0; padding:40px; border-radius:20px">
+<p style="font-size:24px; font-weight:800; letter-spacing:2px; text-transform:uppercase; color:#2A5BC4">Use a</p>
+<h3 style="font-size:32px; font-weight:800; line-height:1.3; color:#15233F">Vowel letter, but a consonant sound</h3>
+<div style="display:flex; flex-direction:row; justify-content:space-between; align-items:baseline; padding:12px 0 0 0">
+<p style="font-size:40px; line-height:1.3"><span style="color:#2A5BC4"><b>a</b></span> university</p>
+<p style="font-size:32px; color:#5E6675">“you” sound</p>
+</div>
+<div style="display:flex; flex-direction:row; justify-content:space-between; align-items:baseline">
+<p style="font-size:40px; line-height:1.3"><span style="color:#2A5BC4"><b>a</b></span> European</p>
+<p style="font-size:32px; color:#5E6675">“you” sound</p>
+</div>
+<div style="display:flex; flex-direction:row; justify-content:space-between; align-items:baseline">
+<p style="font-size:40px; line-height:1.3"><span style="color:#2A5BC4"><b>a</b></span> uniform</p>
+<p style="font-size:32px; color:#5E6675">“you” sound</p>
+</div>
+<div style="display:flex; flex-direction:row; justify-content:space-between; align-items:baseline">
+<p style="font-size:40px; line-height:1.3"><span style="color:#2A5BC4"><b>a</b></span> one-day trip</p>
+<p style="font-size:32px; color:#5E6675">“w” sound</p>
+</div>
+</div>
+<div style="flex:1; display:flex; flex-direction:column; gap:20px; background:#FFFDF9; border:2px solid #E6DFD0; padding:40px; border-radius:20px">
+<p style="font-size:24px; font-weight:800; letter-spacing:2px; text-transform:uppercase; color:#2A5BC4">Use an</p>
+<h3 style="font-size:32px; font-weight:800; line-height:1.3; color:#15233F">Consonant letter, but a vowel sound</h3>
+<div style="display:flex; flex-direction:row; justify-content:space-between; align-items:baseline; padding:12px 0 0 0">
+<p style="font-size:40px; line-height:1.3"><span style="color:#2A5BC4"><b>an</b></span> hour</p>
+<p style="font-size:32px; color:#5E6675">silent h</p>
+</div>
+<div style="display:flex; flex-direction:row; justify-content:space-between; align-items:baseline">
+<p style="font-size:40px; line-height:1.3"><span style="color:#2A5BC4"><b>an</b></span> honest man</p>
+<p style="font-size:32px; color:#5E6675">silent h</p>
+</div>
+<div style="display:flex; flex-direction:row; justify-content:space-between; align-items:baseline">
+<p style="font-size:40px; line-height:1.3"><span style="color:#2A5BC4"><b>an</b></span> MBA</p>
+<p style="font-size:32px; color:#5E6675">M says “em”</p>
+</div>
+<div style="display:flex; flex-direction:row; justify-content:space-between; align-items:baseline">
+<p style="font-size:40px; line-height:1.3"><span style="color:#2A5BC4"><b>an</b></span> X-ray</p>
+<p style="font-size:32px; color:#5E6675">X says “eks”</p>
+</div>
+</div>
+</div>
+<p style="font-size:32px; line-height:1.4; color:#15233F">Not sure? <b>Say the word out loud.</b> The sound decides, not the spelling.</p>
+<p style="position:absolute; left:128px; bottom:64px; width:1200px; font-size:24px; color:#636B78">English Articles · A, An &amp; The</p>
+<p style="position:absolute; right:128px; bottom:64px; width:200px; font-size:24px; color:#636B78; text-align:right">07</p>
+<aside>These words confuse many learners. "University" starts with the letter u, but we say "you-niversity", which starts with a consonant sound, so we say "a university". "One" starts with a "w" sound, so it is "a one-day trip". On the right, "hour" and "honest" start with a silent h, so the first sound is a vowel: "an hour", "an honest man". Letters in abbreviations are read by their names: M is "em" and X is "eks", so we say "an MBA" and "an X-ray". If you are not sure, say the word out loud and listen.</aside>
+</section>
+<section id="use-a-an" data-transition="fade" style="background:#FAF7F0; color:#15233F; font-family:'Nunito Sans', Arial, sans-serif; padding:128px 128px 160px; display:flex; flex-direction:column; gap:40px">
+<div style="display:flex; flex-direction:column; gap:12px">
+<p style="font-size:24px; font-weight:800; letter-spacing:3px; text-transform:uppercase; color:#636B78">03 · Using A / AN</p>
+<h2 style="font-family:'Domine', Georgia, serif; font-size:64px; font-weight:700; line-height:1.1; color:#15233F">When to use a / an</h2>
+</div>
+<div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:32px">
+<div style="display:flex; flex-direction:column; gap:12px; background:#FFFDF9; border:2px solid #E6DFD0; padding:36px; border-radius:16px">
+<h3 style="font-size:32px; font-weight:800; line-height:1.3; color:#15233F"><span style="color:#2A5BC4">1</span>  First mention</h3>
+<p style="font-size:24px; line-height:1.4; color:#3F4A5C">It is new to the listener.</p>
+<p style="font-size:32px; line-height:1.35; color:#15233F">I saw <span style="color:#2A5BC4"><b>a</b></span> great film last night.</p>
+</div>
+<div style="display:flex; flex-direction:column; gap:12px; background:#FFFDF9; border:2px solid #E6DFD0; padding:36px; border-radius:16px">
+<h3 style="font-size:32px; font-weight:800; line-height:1.3; color:#15233F"><span style="color:#2A5BC4">2</span>  Any one</h3>
+<p style="font-size:24px; line-height:1.4; color:#3F4A5C">Which one does not matter.</p>
+<p style="font-size:32px; line-height:1.35; color:#15233F">Can I borrow <span style="color:#2A5BC4"><b>a</b></span> pen?</p>
+</div>
+<div style="display:flex; flex-direction:column; gap:12px; background:#FFFDF9; border:2px solid #E6DFD0; padding:36px; border-radius:16px">
+<h3 style="font-size:32px; font-weight:800; line-height:1.3; color:#15233F"><span style="color:#2A5BC4">3</span>  Jobs</h3>
+<p style="font-size:24px; line-height:1.4; color:#3F4A5C">Say what someone does.</p>
+<p style="font-size:32px; line-height:1.35; color:#15233F">She is <span style="color:#2A5BC4"><b>an</b></span> engineer.</p>
+</div>
+<div style="display:flex; flex-direction:column; gap:12px; background:#FFFDF9; border:2px solid #E6DFD0; padding:36px; border-radius:16px">
+<h3 style="font-size:32px; font-weight:800; line-height:1.3; color:#15233F"><span style="color:#2A5BC4">4</span>  Describing</h3>
+<p style="font-size:24px; line-height:1.4; color:#3F4A5C">Say what kind of thing it is.</p>
+<p style="font-size:32px; line-height:1.35; color:#15233F">It’s <span style="color:#2A5BC4"><b>a</b></span> beautiful day.</p>
+</div>
+<div style="display:flex; flex-direction:column; gap:12px; background:#FFFDF9; border:2px solid #E6DFD0; padding:36px; border-radius:16px">
+<h3 style="font-size:32px; font-weight:800; line-height:1.3; color:#15233F"><span style="color:#2A5BC4">5</span>  Meaning “one”</h3>
+<p style="font-size:24px; line-height:1.4; color:#3F4A5C">A / an = one.</p>
+<p style="font-size:32px; line-height:1.35; color:#15233F">I’ll be back in <span style="color:#2A5BC4"><b>an</b></span> hour.</p>
+</div>
+<div style="display:flex; flex-direction:column; gap:12px; background:#FFFDF9; border:2px solid #E6DFD0; padding:36px; border-radius:16px">
+<h3 style="font-size:32px; font-weight:800; line-height:1.3; color:#15233F"><span style="color:#2A5BC4">6</span>  “Per” / “every”</h3>
+<p style="font-size:24px; line-height:1.4; color:#3F4A5C">How often, how fast, how much.</p>
+<p style="font-size:32px; line-height:1.35; color:#15233F">twice <span style="color:#2A5BC4"><b>a</b></span> week · 90 km <span style="color:#2A5BC4"><b>an</b></span> hour</p>
+</div>
+</div>
+<p style="position:absolute; left:128px; bottom:64px; width:1200px; font-size:24px; color:#636B78">English Articles · A, An &amp; The</p>
+<p style="position:absolute; right:128px; bottom:64px; width:200px; font-size:24px; color:#636B78; text-align:right">08</p>
+<aside>Here are the six most common uses of a / an. One: when we mention something for the first time. The listener doesn't know it yet. Two: when we mean any one, and it doesn't matter which. Three: with jobs. In English we must say "She is an engineer", never "She is engineer". Four: when we describe something or say what kind of thing it is. Five: a / an can simply mean "one": "an hour" is "one hour". Six: to say "per" or "every": "twice a week", "ninety kilometres an hour".</aside>
+</section>
+<section id="countable-only" data-transition="fade" style="background:#FAF7F0; color:#15233F; font-family:'Nunito Sans', Arial, sans-serif; padding:128px 128px 160px; display:flex; flex-direction:column; gap:40px">
+<div style="display:flex; flex-direction:column; gap:12px">
+<p style="font-size:24px; font-weight:800; letter-spacing:3px; text-transform:uppercase; color:#636B78">03 · Using A / AN</p>
+<h2 style="font-family:'Domine', Georgia, serif; font-size:64px; font-weight:700; line-height:1.1; color:#15233F">A / an means one countable thing</h2>
+</div>
+<div style="display:flex; flex-direction:row; gap:56px; align-items:start">
+<div style="width:600px; display:flex; flex-direction:column; gap:28px">
+<p style="font-size:32px; line-height:1.4; color:#15233F">Use <span style="color:#2A5BC4"><b>a / an</b></span> only with a <b>singular countable</b> noun: something you can count. <b>one</b> book, <b>two</b> books.</p>
+<p style="font-size:32px; line-height:1.4; color:#15233F">With <b>plural</b> or <b>uncountable</b> nouns, use <b>some</b>, or no article.</p>
+<div style="display:flex; flex-direction:column; gap:8px; background:#ECEAE6; padding:28px 32px; border-radius:16px">
+<p style="font-size:24px; font-weight:800; letter-spacing:2px; text-transform:uppercase; color:#5E6675">Common uncountable nouns</p>
+<p style="font-size:32px; line-height:1.4; color:#15233F">water, money, advice, information, news, music, homework, furniture</p>
+</div>
+</div>
+<table style="flex:1; font-size:32px; color:#15233F; border:2px solid #E6DFD0; border-radius:16px">
+<tr style="background:#15233F"><th style="width:40%; color:#FFB4A8">Wrong</th><th style="width:60%; color:#A8E0C4">Right</th></tr>
+<tr style="background:#FFFDF9"><td style="color:#A33A3A">a books</td><td style="color:#1F6B4A">books / some books</td></tr>
+<tr style="background:#F3EEE4"><td style="color:#A33A3A">a water</td><td style="color:#1F6B4A">water / a glass of water</td></tr>
+<tr style="background:#FFFDF9"><td style="color:#A33A3A">an advice</td><td style="color:#1F6B4A">some advice / a piece of advice</td></tr>
+<tr style="background:#F3EEE4"><td style="color:#A33A3A">an information</td><td style="color:#1F6B4A">some information</td></tr>
+<tr style="background:#FFFDF9"><td style="color:#A33A3A">a homework</td><td style="color:#1F6B4A">some homework</td></tr>
+<tr style="background:#F3EEE4"><td style="color:#A33A3A">a good news</td><td style="color:#1F6B4A">good news / some good news</td></tr>
+</table>
+</div>
+<p style="position:absolute; left:128px; bottom:64px; width:1200px; font-size:24px; color:#636B78">English Articles · A, An &amp; The</p>
+<p style="position:absolute; right:128px; bottom:64px; width:200px; font-size:24px; color:#636B78; text-align:right">09</p>
+<aside>A / an comes from the old word for "one". So we can only use it with one countable thing. We never say "a books", because "books" is plural. We also never say "a water" or "an advice", because these nouns are uncountable: we cannot count them one by one. Instead we say "some water", "some advice", or we use a container or unit: "a glass of water", "a piece of advice". Be careful: in many languages "advice", "information" and "news" are countable, but in English they are uncountable.</aside>
+</section>
+<section id="use-the" data-transition="fade" style="background:#FAF7F0; color:#15233F; font-family:'Nunito Sans', Arial, sans-serif; padding:128px 128px 160px; display:flex; flex-direction:column; gap:40px">
+<div style="display:flex; flex-direction:column; gap:12px">
+<p style="font-size:24px; font-weight:800; letter-spacing:3px; text-transform:uppercase; color:#636B78">04 · Using THE</p>
+<h2 style="font-family:'Domine', Georgia, serif; font-size:64px; font-weight:700; line-height:1.1; color:#15233F">When to use the</h2>
+</div>
+<div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:32px">
+<div style="display:flex; flex-direction:column; gap:12px; background:#FFFDF9; border:2px solid #E6DFD0; padding:36px; border-radius:16px">
+<h3 style="font-size:32px; font-weight:800; line-height:1.3; color:#15233F"><span style="color:#A2470F">1</span>  Second mention</h3>
+<p style="font-size:24px; line-height:1.4; color:#3F4A5C">Now we know which one.</p>
+<p style="font-size:32px; line-height:1.35; color:#15233F">I saw <span style="color:#2A5BC4"><b>a</b></span> film. <span style="color:#A2470F"><b>The</b></span> film was great.</p>
+</div>
+<div style="display:flex; flex-direction:column; gap:12px; background:#FFFDF9; border:2px solid #E6DFD0; padding:36px; border-radius:16px">
+<h3 style="font-size:32px; font-weight:800; line-height:1.3; color:#15233F"><span style="color:#A2470F">2</span>  Only one exists</h3>
+<p style="font-size:24px; line-height:1.4; color:#3F4A5C">There is only one in the world.</p>
+<p style="font-size:32px; line-height:1.35; color:#15233F"><span style="color:#A2470F"><b>the</b></span> sun · <span style="color:#A2470F"><b>the</b></span> moon · <span style="color:#A2470F"><b>the</b></span> internet</p>
+</div>
+<div style="display:flex; flex-direction:column; gap:12px; background:#FFFDF9; border:2px solid #E6DFD0; padding:36px; border-radius:16px">
+<h3 style="font-size:32px; font-weight:800; line-height:1.3; color:#15233F"><span style="color:#A2470F">3</span>  We both know</h3>
+<p style="font-size:24px; line-height:1.4; color:#3F4A5C">The situation makes it clear.</p>
+<p style="font-size:32px; line-height:1.35; color:#15233F">Please close <span style="color:#A2470F"><b>the</b></span> door.</p>
+</div>
+<div style="display:flex; flex-direction:column; gap:12px; background:#FFFDF9; border:2px solid #E6DFD0; padding:36px; border-radius:16px">
+<h3 style="font-size:32px; font-weight:800; line-height:1.3; color:#15233F"><span style="color:#A2470F">4</span>  Made specific</h3>
+<p style="font-size:24px; line-height:1.4; color:#3F4A5C">More words tell us which one.</p>
+<p style="font-size:32px; line-height:1.35; color:#15233F"><span style="color:#A2470F"><b>the</b></span> man who called you</p>
+</div>
+<div style="display:flex; flex-direction:column; gap:12px; background:#FFFDF9; border:2px solid #E6DFD0; padding:36px; border-radius:16px">
+<h3 style="font-size:32px; font-weight:800; line-height:1.3; color:#15233F"><span style="color:#A2470F">5</span>  Superlatives</h3>
+<p style="font-size:24px; line-height:1.4; color:#3F4A5C">best, biggest, most important…</p>
+<p style="font-size:32px; line-height:1.35; color:#15233F">She is <span style="color:#A2470F"><b>the</b></span> best player.</p>
+</div>
+<div style="display:flex; flex-direction:column; gap:12px; background:#FFFDF9; border:2px solid #E6DFD0; padding:36px; border-radius:16px">
+<h3 style="font-size:32px; font-weight:800; line-height:1.3; color:#15233F"><span style="color:#A2470F">6</span>  Order and “only”</h3>
+<p style="font-size:24px; line-height:1.4; color:#3F4A5C">first, last, next, only, same</p>
+<p style="font-size:32px; line-height:1.35; color:#15233F"><span style="color:#A2470F"><b>the</b></span> first day · <span style="color:#A2470F"><b>the</b></span> only way</p>
+</div>
+</div>
+<p style="position:absolute; left:128px; bottom:64px; width:1200px; font-size:24px; color:#636B78">English Articles · A, An &amp; The</p>
+<p style="position:absolute; right:128px; bottom:64px; width:200px; font-size:24px; color:#636B78; text-align:right">10</p>
+<aside>"The" always means: the listener knows exactly which one. One: the second time we mention something. First "a film", then "the film". Two: things that are unique, like the sun, the moon or the internet. Three: when the situation makes it clear. If there is one door in the room, it is "the door". Four: when extra words make it specific: "the man who called you", "the book on the table". Five: with superlatives like "the best" or "the biggest", because only one thing can be the best. Six: with first, last, next, only and same, for the same reason.</aside>
+</section>
+<section id="the-places" data-transition="fade" style="background:#FAF7F0; color:#15233F; font-family:'Nunito Sans', Arial, sans-serif; padding:128px 128px 160px; display:flex; flex-direction:column; gap:40px">
+<div style="display:flex; flex-direction:column; gap:12px">
+<p style="font-size:24px; font-weight:800; letter-spacing:3px; text-transform:uppercase; color:#636B78">04 · Using THE</p>
+<h2 style="font-family:'Domine', Georgia, serif; font-size:64px; font-weight:700; line-height:1.1; color:#15233F">Place names: the or no article?</h2>
+</div>
+<div style="display:flex; flex-direction:row; gap:40px">
+<div style="flex:1; display:flex; flex-direction:column; gap:18px; background:#FBE8DA; padding:40px; border-radius:20px">
+<p style="font-size:40px; font-weight:800; line-height:1.2; color:#A2470F">Use the</p>
+<div style="display:flex; flex-direction:row; gap:20px; align-items:baseline; padding:6px 0 0 0">
+<p style="width:260px; font-size:24px; font-weight:700; color:#3F4A5C">Rivers</p>
+<p style="flex:1; font-size:32px; line-height:1.3"><span style="color:#A2470F"><b>the</b></span> Nile, <span style="color:#A2470F"><b>the</b></span> Amazon</p>
+</div>
+<div style="display:flex; flex-direction:row; gap:20px; align-items:baseline">
+<p style="width:260px; font-size:24px; font-weight:700; color:#3F4A5C">Seas and oceans</p>
+<p style="flex:1; font-size:32px; line-height:1.3"><span style="color:#A2470F"><b>the</b></span> Aral Sea, <span style="color:#A2470F"><b>the</b></span> Pacific</p>
+</div>
+<div style="display:flex; flex-direction:row; gap:20px; align-items:baseline">
+<p style="width:260px; font-size:24px; font-weight:700; color:#3F4A5C">Mountain ranges</p>
+<p style="flex:1; font-size:32px; line-height:1.3"><span style="color:#A2470F"><b>the</b></span> Alps, <span style="color:#A2470F"><b>the</b></span> Himalayas</p>
+</div>
+<div style="display:flex; flex-direction:row; gap:20px; align-items:baseline">
+<p style="width:260px; font-size:24px; font-weight:700; color:#3F4A5C">Deserts</p>
+<p style="flex:1; font-size:32px; line-height:1.3"><span style="color:#A2470F"><b>the</b></span> Sahara, <span style="color:#A2470F"><b>the</b></span> Gobi</p>
+</div>
+<div style="display:flex; flex-direction:row; gap:20px; align-items:baseline">
+<p style="width:260px; font-size:24px; font-weight:700; color:#3F4A5C">States, Kingdom, Emirates</p>
+<p style="flex:1; font-size:32px; line-height:1.3"><span style="color:#A2470F"><b>the</b></span> USA, <span style="color:#A2470F"><b>the</b></span> UK, <span style="color:#A2470F"><b>the</b></span> UAE</p>
+</div>
+<div style="display:flex; flex-direction:row; gap:20px; align-items:baseline">
+<p style="width:260px; font-size:24px; font-weight:700; color:#3F4A5C">Plural names</p>
+<p style="flex:1; font-size:32px; line-height:1.3"><span style="color:#A2470F"><b>the</b></span> Netherlands</p>
+</div>
+</div>
+<div style="flex:1; display:flex; flex-direction:column; gap:18px; background:#ECEAE6; padding:40px; border-radius:20px">
+<p style="font-size:40px; font-weight:800; line-height:1.2; color:#5E6675">No article (Ø)</p>
+<div style="display:flex; flex-direction:row; gap:20px; align-items:baseline; padding:6px 0 0 0">
+<p style="width:260px; font-size:24px; font-weight:700; color:#3F4A5C">Most countries</p>
+<p style="flex:1; font-size:32px; line-height:1.3">Uzbekistan, Japan, Brazil</p>
+</div>
+<div style="display:flex; flex-direction:row; gap:20px; align-items:baseline">
+<p style="width:260px; font-size:24px; font-weight:700; color:#3F4A5C">Cities</p>
+<p style="flex:1; font-size:32px; line-height:1.3">Tashkent, London, Paris</p>
+</div>
+<div style="display:flex; flex-direction:row; gap:20px; align-items:baseline">
+<p style="width:260px; font-size:24px; font-weight:700; color:#3F4A5C">Continents</p>
+<p style="flex:1; font-size:32px; line-height:1.3">Asia, Europe, Africa</p>
+</div>
+<div style="display:flex; flex-direction:row; gap:20px; align-items:baseline">
+<p style="width:260px; font-size:24px; font-weight:700; color:#3F4A5C">Single mountains</p>
+<p style="flex:1; font-size:32px; line-height:1.3">Mount Everest</p>
+</div>
+<div style="display:flex; flex-direction:row; gap:20px; align-items:baseline">
+<p style="width:260px; font-size:24px; font-weight:700; color:#3F4A5C">Lakes</p>
+<p style="flex:1; font-size:32px; line-height:1.3">Lake Baikal</p>
+</div>
+<div style="display:flex; flex-direction:row; gap:20px; align-items:baseline">
+<p style="width:260px; font-size:24px; font-weight:700; color:#3F4A5C">Streets</p>
+<p style="flex:1; font-size:32px; line-height:1.3">Oxford Street</p>
+</div>
+</div>
+</div>
+<p style="font-size:32px; line-height:1.4; color:#15233F">Watch for <b>“of”</b>: Uzbekistan → <span style="color:#A2470F"><b>the</b></span> Republic of Uzbekistan</p>
+<p style="position:absolute; left:128px; bottom:64px; width:1200px; font-size:24px; color:#636B78">English Articles · A, An &amp; The</p>
+<p style="position:absolute; right:128px; bottom:64px; width:200px; font-size:24px; color:#636B78; text-align:right">11</p>
+<aside>Place names are a special area. We use "the" with rivers, seas and oceans, mountain ranges and deserts. We also use it with country names that contain a word like States, Kingdom or Emirates, and with plural names like the Netherlands. But most countries, all cities, continents, single mountains, lakes and streets take no article. So we say "I live in Uzbekistan", not "the Uzbekistan", and "I live in Tashkent", not "the Tashkent". One useful clue: when a name has "of" in it, it usually takes "the": the Republic of Uzbekistan, the Gulf of Mexico.</aside>
+</section>
+<section id="the-fixed" data-transition="fade" style="background:#FAF7F0; color:#15233F; font-family:'Nunito Sans', Arial, sans-serif; padding:128px 128px 160px; display:flex; flex-direction:column; gap:40px">
+<div style="display:flex; flex-direction:column; gap:12px">
+<p style="font-size:24px; font-weight:800; letter-spacing:3px; text-transform:uppercase; color:#636B78">04 · Using THE</p>
+<h2 style="font-family:'Domine', Georgia, serif; font-size:64px; font-weight:700; line-height:1.1; color:#15233F">More fixed uses of the</h2>
+</div>
+<table style="font-size:32px; color:#15233F; border:2px solid #E6DFD0; border-radius:16px">
+<tr style="background:#15233F"><th style="width:42%; color:#F4EFE4">Group</th><th style="width:58%; color:#F4A261">Examples with the</th></tr>
+<tr style="background:#FFFDF9"><td>Musical instruments</td><td>play the piano, play the guitar</td></tr>
+<tr style="background:#F3EEE4"><td>Groups of people (the + adjective)</td><td>the rich, the young, the elderly</td></tr>
+<tr style="background:#FFFDF9"><td>Nationalities as a group</td><td>the British, the Chinese</td></tr>
+<tr style="background:#F3EEE4"><td>Famous buildings and museums</td><td>the Eiffel Tower, the Louvre</td></tr>
+<tr style="background:#FFFDF9"><td>Newspapers</td><td>the Times, the Guardian</td></tr>
+<tr style="background:#F3EEE4"><td>Decades</td><td>the 1990s, the 2020s</td></tr>
+<tr style="background:#FFFDF9"><td>A whole family</td><td>the Smiths, the Karimovs</td></tr>
+</table>
+<p style="position:absolute; left:128px; bottom:64px; width:1200px; font-size:24px; color:#636B78">English Articles · A, An &amp; The</p>
+<p style="position:absolute; right:128px; bottom:64px; width:200px; font-size:24px; color:#636B78; text-align:right">12</p>
+<aside>Some uses of "the" are fixed. We just need to learn them. We play the piano and play the guitar. "The" + an adjective can mean a whole group of people: the rich, the young, the elderly. We use "the" for a nationality as a whole group: the British, the Chinese. Famous buildings, museums, hotels and many newspapers take "the". We also say "the 1990s" for decades, and "the Smiths" or "the Karimovs" for a whole family.</aside>
+</section>
+<section id="zero-general" data-transition="fade" style="background:#FAF7F0; color:#15233F; font-family:'Nunito Sans', Arial, sans-serif; padding:128px 128px 160px; display:flex; flex-direction:column; gap:40px">
+<div style="display:flex; flex-direction:column; gap:12px">
+<p style="font-size:24px; font-weight:800; letter-spacing:3px; text-transform:uppercase; color:#636B78">05 · No article (Ø)</p>
+<h2 style="font-family:'Domine', Georgia, serif; font-size:64px; font-weight:700; line-height:1.1; color:#15233F">No article: talking in general</h2>
+</div>
+<p style="font-size:32px; line-height:1.4; color:#3F4A5C">When we talk about things <b>in general</b> (all of them, or the idea), we use plural or uncountable nouns with <b>no article</b>.</p>
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:20px">
+<p style="font-size:24px; font-weight:800; letter-spacing:2px; text-transform:uppercase; color:#5E6675">General → no article (Ø)</p>
+<p style="font-size:24px; font-weight:800; letter-spacing:2px; text-transform:uppercase; color:#A2470F">Specific → the</p>
+<p style="font-size:32px; line-height:1.35; background:#ECEAE6; padding:24px 32px; border-radius:14px"><span style="color:#5E6675"><b>Dogs</b></span> are loyal animals.</p>
+<p style="font-size:32px; line-height:1.35; background:#FBE8DA; padding:24px 32px; border-radius:14px"><span style="color:#A2470F"><b>The</b></span> dogs next door are very loud.</p>
+<p style="font-size:32px; line-height:1.35; background:#ECEAE6; padding:24px 32px; border-radius:14px">I love <span style="color:#5E6675"><b>music</b></span>.</p>
+<p style="font-size:32px; line-height:1.35; background:#FBE8DA; padding:24px 32px; border-radius:14px">I love <span style="color:#A2470F"><b>the</b></span> music in this film.</p>
+<p style="font-size:32px; line-height:1.35; background:#ECEAE6; padding:24px 32px; border-radius:14px"><span style="color:#5E6675"><b>Water</b></span> is important for life.</p>
+<p style="font-size:32px; line-height:1.35; background:#FBE8DA; padding:24px 32px; border-radius:14px"><span style="color:#A2470F"><b>The</b></span> water in this bottle is cold.</p>
+</div>
+<p style="position:absolute; left:128px; bottom:64px; width:1200px; font-size:24px; color:#636B78">English Articles · A, An &amp; The</p>
+<p style="position:absolute; right:128px; bottom:64px; width:200px; font-size:24px; color:#636B78; text-align:right">13</p>
+<aside>This is a very common mistake. When we talk about something in general, we use no article. "Dogs are loyal animals" means all dogs. "The dogs next door are very loud" means some specific dogs. "I love music" means music in general. "I love the music in this film" means one specific music. So ask yourself: am I talking about everything in general, or about specific ones? General: no article. Specific: the.</aside>
+</section>
+<section id="zero-fixed" data-transition="fade" style="background:#FAF7F0; color:#15233F; font-family:'Nunito Sans', Arial, sans-serif; padding:128px 128px 160px; display:flex; flex-direction:column; gap:40px">
+<div style="display:flex; flex-direction:column; gap:12px">
+<p style="font-size:24px; font-weight:800; letter-spacing:3px; text-transform:uppercase; color:#636B78">05 · No article (Ø)</p>
+<h2 style="font-family:'Domine', Georgia, serif; font-size:64px; font-weight:700; line-height:1.1; color:#15233F">No article: common fixed groups</h2>
+</div>
+<div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:32px">
+<div style="display:flex; flex-direction:column; gap:12px; background:#FFFDF9; border:2px solid #E6DFD0; padding:36px; border-radius:16px">
+<h3 style="font-size:32px; font-weight:800; line-height:1.3; color:#15233F"><span style="color:#5E6675">1</span>  Meals</h3>
+<p style="font-size:24px; line-height:1.4; color:#3F4A5C">breakfast, lunch, dinner</p>
+<p style="font-size:32px; line-height:1.35; color:#15233F">Let’s have <span style="color:#5E6675"><b>lunch</b></span> together.</p>
+</div>
+<div style="display:flex; flex-direction:column; gap:12px; background:#FFFDF9; border:2px solid #E6DFD0; padding:36px; border-radius:16px">
+<h3 style="font-size:32px; font-weight:800; line-height:1.3; color:#15233F"><span style="color:#5E6675">2</span>  Sports and games</h3>
+<p style="font-size:24px; line-height:1.4; color:#3F4A5C">football, tennis, chess</p>
+<p style="font-size:32px; line-height:1.35; color:#15233F">We play <span style="color:#5E6675"><b>football</b></span> on Sundays.</p>
+</div>
+<div style="display:flex; flex-direction:column; gap:12px; background:#FFFDF9; border:2px solid #E6DFD0; padding:36px; border-radius:16px">
+<h3 style="font-size:32px; font-weight:800; line-height:1.3; color:#15233F"><span style="color:#5E6675">3</span>  Languages, subjects</h3>
+<p style="font-size:24px; line-height:1.4; color:#3F4A5C">English, math, history</p>
+<p style="font-size:32px; line-height:1.35; color:#15233F">She speaks <span style="color:#5E6675"><b>English</b></span> and <span style="color:#5E6675"><b>Uzbek</b></span>.</p>
+</div>
+<div style="display:flex; flex-direction:column; gap:12px; background:#FFFDF9; border:2px solid #E6DFD0; padding:36px; border-radius:16px">
+<h3 style="font-size:32px; font-weight:800; line-height:1.3; color:#15233F"><span style="color:#5E6675">4</span>  Days and months</h3>
+<p style="font-size:24px; line-height:1.4; color:#3F4A5C">Monday, July, 2026</p>
+<p style="font-size:32px; line-height:1.35; color:#15233F">See you on <span style="color:#5E6675"><b>Monday</b></span>.</p>
+</div>
+<div style="display:flex; flex-direction:column; gap:12px; background:#FFFDF9; border:2px solid #E6DFD0; padding:36px; border-radius:16px">
+<h3 style="font-size:32px; font-weight:800; line-height:1.3; color:#15233F"><span style="color:#5E6675">5</span>  Names</h3>
+<p style="font-size:24px; line-height:1.4; color:#3F4A5C">people, cities, most countries</p>
+<p style="font-size:32px; line-height:1.35; color:#15233F"><span style="color:#5E6675"><b>Anna</b></span> lives in <span style="color:#5E6675"><b>Tashkent</b></span>.</p>
+</div>
+<div style="display:flex; flex-direction:column; gap:12px; background:#FFFDF9; border:2px solid #E6DFD0; padding:36px; border-radius:16px">
+<h3 style="font-size:32px; font-weight:800; line-height:1.3; color:#15233F"><span style="color:#5E6675">6</span>  “by” + transport</h3>
+<p style="font-size:24px; line-height:1.4; color:#3F4A5C">bus, car, train, plane</p>
+<p style="font-size:32px; line-height:1.35; color:#15233F">I go to work by <span style="color:#5E6675"><b>bus</b></span>.</p>
+</div>
+</div>
+<p style="position:absolute; left:128px; bottom:64px; width:1200px; font-size:24px; color:#636B78">English Articles · A, An &amp; The</p>
+<p style="position:absolute; right:128px; bottom:64px; width:200px; font-size:24px; color:#636B78; text-align:right">14</p>
+<aside>Here are six groups of words that normally take no article. Meals: have breakfast, have lunch. Sports and games: play football, play chess. Compare this with musical instruments, which take "the": play the piano. Languages and school subjects: speak English, study math. Days, months and years: on Monday, in July, in 2026. Names of people, cities and most countries. And transport after "by": by bus, by car, by train.</aside>
+</section>
+<section id="institutions" data-transition="fade" style="background:#FAF7F0; color:#15233F; font-family:'Nunito Sans', Arial, sans-serif; padding:128px 128px 160px; display:flex; flex-direction:column; gap:40px">
+<div style="display:flex; flex-direction:column; gap:12px">
+<p style="font-size:24px; font-weight:800; letter-spacing:3px; text-transform:uppercase; color:#636B78">05 · No article (Ø)</p>
+<h2 style="font-family:'Domine', Georgia, serif; font-size:64px; font-weight:700; line-height:1.1; color:#15233F">“Go to school” or “go to the school”?</h2>
+</div>
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:20px">
+<p style="font-size:24px; font-weight:800; letter-spacing:2px; text-transform:uppercase; color:#5E6675">No article → the main purpose</p>
+<p style="font-size:24px; font-weight:800; letter-spacing:2px; text-transform:uppercase; color:#A2470F">The → the building or the object</p>
+<p style="font-size:32px; line-height:1.35; background:#ECEAE6; padding:24px 32px; border-radius:14px">I go to <span style="color:#5E6675"><b>school</b></span> every day. (I study there.)</p>
+<p style="font-size:32px; line-height:1.35; background:#FBE8DA; padding:24px 32px; border-radius:14px">Parents came to <span style="color:#A2470F"><b>the</b></span> school for a meeting.</p>
+<p style="font-size:32px; line-height:1.35; background:#ECEAE6; padding:24px 32px; border-radius:14px">It’s late. Time to go to <span style="color:#5E6675"><b>bed</b></span>.</p>
+<p style="font-size:32px; line-height:1.35; background:#FBE8DA; padding:24px 32px; border-radius:14px">Your phone is on <span style="color:#A2470F"><b>the</b></span> bed.</p>
+<p style="font-size:32px; line-height:1.35; background:#ECEAE6; padding:24px 32px; border-radius:14px">He is in <span style="color:#5E6675"><b>hospital</b></span> with a broken leg.</p>
+<p style="font-size:32px; line-height:1.35; background:#FBE8DA; padding:24px 32px; border-radius:14px">I went to <span style="color:#A2470F"><b>the</b></span> hospital to visit him.</p>
+</div>
+<p style="font-size:32px; line-height:1.4; color:#3F4A5C">Also with no article: <b>at home, at work, at night, go home.</b> In American English, people usually say “in <b>the</b> hospital”.</p>
+<p style="position:absolute; left:128px; bottom:64px; width:1200px; font-size:24px; color:#636B78">English Articles · A, An &amp; The</p>
+<p style="position:absolute; right:128px; bottom:64px; width:200px; font-size:24px; color:#636B78; text-align:right">15</p>
+<aside>Words like school, bed, hospital, prison, church and university work in a special way. When we use the place for its main purpose, we use no article. A student goes to school to study. A tired person goes to bed to sleep. A patient is in hospital. But when we mean just the building or the object, we use "the": parents go to the school for a meeting, your phone is on the bed, you go to the hospital to visit a friend. Also remember these phrases with no article: at home, at work, at night, go home. Note that American English usually says "in the hospital".</aside>
+</section>
+<section id="matrix" data-transition="fade" style="background:#FAF7F0; color:#15233F; font-family:'Nunito Sans', Arial, sans-serif; padding:128px 128px 160px; display:flex; flex-direction:column; gap:40px">
+<div style="display:flex; flex-direction:column; gap:12px">
+<p style="font-size:24px; font-weight:800; letter-spacing:3px; text-transform:uppercase; color:#636B78">06 · Putting it together</p>
+<h2 style="font-family:'Domine', Georgia, serif; font-size:64px; font-weight:700; line-height:1.1; color:#15233F">One chart for every noun</h2>
+</div>
+<div style="display:grid; grid-template-columns:400px 1fr 1fr; gap:16px">
+<div></div>
+<div style="display:flex; flex-direction:column; gap:4px; padding:8px 32px">
+<p style="font-size:32px; font-weight:800; color:#15233F">Singular countable</p>
+<p style="font-size:24px; color:#3F4A5C">one book, one apple</p>
+</div>
+<div style="display:flex; flex-direction:column; gap:4px; padding:8px 32px">
+<p style="font-size:32px; font-weight:800; color:#15233F">Plural or uncountable</p>
+<p style="font-size:24px; color:#3F4A5C">books, water, music</p>
+</div>
+<div style="display:flex; flex-direction:column; justify-content:center; gap:4px; background:#15233F; padding:32px; border-radius:16px">
+<p style="font-size:32px; font-weight:800; color:#F4EFE4">Specific</p>
+<p style="font-size:24px; line-height:1.4; color:#C9D1DE">We both know which one</p>
+</div>
+<div style="display:flex; flex-direction:column; gap:8px; background:#FBE8DA; padding:32px; border-radius:16px">
+<p style="font-family:'Domine', Georgia, serif; font-size:64px; font-weight:700; line-height:1.1; color:#A2470F">the</p>
+<p style="font-size:32px; color:#15233F"><span style="color:#A2470F"><b>the</b></span> book · <span style="color:#A2470F"><b>the</b></span> apple</p>
+</div>
+<div style="display:flex; flex-direction:column; gap:8px; background:#FBE8DA; padding:32px; border-radius:16px">
+<p style="font-family:'Domine', Georgia, serif; font-size:64px; font-weight:700; line-height:1.1; color:#A2470F">the</p>
+<p style="font-size:32px; color:#15233F"><span style="color:#A2470F"><b>the</b></span> books · <span style="color:#A2470F"><b>the</b></span> water</p>
+</div>
+<div style="display:flex; flex-direction:column; justify-content:center; gap:4px; background:#15233F; padding:32px; border-radius:16px">
+<p style="font-size:32px; font-weight:800; color:#F4EFE4">General</p>
+<p style="font-size:24px; line-height:1.4; color:#C9D1DE">Any one, or things in general</p>
+</div>
+<div style="display:flex; flex-direction:column; gap:8px; background:#E4EBFA; padding:32px; border-radius:16px">
+<p style="font-family:'Domine', Georgia, serif; font-size:64px; font-weight:700; line-height:1.1; color:#2A5BC4">a / an</p>
+<p style="font-size:32px; color:#15233F"><span style="color:#2A5BC4"><b>a</b></span> book · <span style="color:#2A5BC4"><b>an</b></span> apple</p>
+</div>
+<div style="display:flex; flex-direction:column; gap:8px; background:#ECEAE6; padding:32px; border-radius:16px">
+<p style="font-family:'Domine', Georgia, serif; font-size:64px; font-weight:700; line-height:1.1; color:#5E6675">Ø</p>
+<p style="font-size:32px; color:#15233F">books · water · music</p>
+</div>
+</div>
+<p style="font-size:32px; line-height:1.4; color:#15233F"><b>Then, for a / an:</b> check the first <b>sound</b> of the next word.</p>
+<p style="position:absolute; left:128px; bottom:64px; width:1200px; font-size:24px; color:#636B78">English Articles · A, An &amp; The</p>
+<p style="position:absolute; right:128px; bottom:64px; width:200px; font-size:24px; color:#636B78; text-align:right">16</p>
+<aside>This one chart covers almost every noun. Ask two questions. First: is the noun singular and countable, or is it plural or uncountable? Second: is it specific, meaning we both know which one, or is it general? If it is specific, the answer is always "the", for any kind of noun. If it is general and singular countable, use a or an. If it is general and plural or uncountable, use no article. Finally, if you chose a / an, check the first sound of the next word.</aside>
+</section>
+<section id="mistakes" data-transition="fade" style="background:#FAF7F0; color:#15233F; font-family:'Nunito Sans', Arial, sans-serif; padding:128px 128px 160px; display:flex; flex-direction:column; gap:40px">
+<div style="display:flex; flex-direction:column; gap:12px">
+<p style="font-size:24px; font-weight:800; letter-spacing:3px; text-transform:uppercase; color:#636B78">06 · Putting it together</p>
+<h2 style="font-family:'Domine', Georgia, serif; font-size:64px; font-weight:700; line-height:1.1; color:#15233F">Common mistakes and how to fix them</h2>
+<p style="font-size:32px; line-height:1.4; color:#3F4A5C">Uzbek and Russian have no articles, so these mistakes are very common, and easy to fix.</p>
+</div>
+<table style="font-size:32px; color:#15233F; border:2px solid #E6DFD0; border-radius:16px">
+<tr style="background:#15233F"><th style="width:33%; color:#FFB4A8">Wrong</th><th style="width:37%; color:#A8E0C4">Right</th><th style="width:30%; color:#F4EFE4">Why</th></tr>
+<tr style="background:#FFFDF9"><td style="color:#A33A3A">She is doctor.</td><td style="color:#1F6B4A">She is a doctor.</td><td>Jobs take a / an.</td></tr>
+<tr style="background:#F3EEE4"><td style="color:#A33A3A">I waited a hour.</td><td style="color:#1F6B4A">I waited an hour.</td><td>Silent h: vowel sound.</td></tr>
+<tr style="background:#FFFDF9"><td style="color:#A33A3A">The life is short.</td><td style="color:#1F6B4A">Life is short.</td><td>General idea: Ø.</td></tr>
+<tr style="background:#F3EEE4"><td style="color:#A33A3A">Sun is hot today.</td><td style="color:#1F6B4A">The sun is hot today.</td><td>Only one exists.</td></tr>
+<tr style="background:#FFFDF9"><td style="color:#A33A3A">I play the football.</td><td style="color:#1F6B4A">I play football.</td><td>Sports: Ø.</td></tr>
+<tr style="background:#F3EEE4"><td style="color:#A33A3A">Give me an advice.</td><td style="color:#1F6B4A">Give me some advice.</td><td>Advice is uncountable.</td></tr>
+<tr style="background:#FFFDF9"><td style="color:#A33A3A">He is a best student.</td><td style="color:#1F6B4A">He is the best student.</td><td>Superlatives take the.</td></tr>
+</table>
+<p style="position:absolute; left:128px; bottom:64px; width:1200px; font-size:24px; color:#636B78">English Articles · A, An &amp; The</p>
+<p style="position:absolute; right:128px; bottom:64px; width:200px; font-size:24px; color:#636B78; text-align:right">17</p>
+<aside>Languages like Uzbek and Russian have no articles, so learners often forget them or add them in the wrong place. Here are seven very common mistakes. Read the wrong sentence, then the right one, then the reason. Notice that every reason is a rule we already learned: jobs take a / an, silent h means a vowel sound, general ideas take no article, unique things take the, sports take no article, uncountable nouns never take a / an, and superlatives take the.</aside>
+</section>
+<section id="story" data-transition="fade" style="background:#FAF7F0; color:#15233F; font-family:'Nunito Sans', Arial, sans-serif; padding:128px 128px 160px; display:flex; flex-direction:column; gap:32px">
+<div style="display:flex; flex-direction:column; gap:12px">
+<p style="font-size:24px; font-weight:800; letter-spacing:3px; text-transform:uppercase; color:#636B78">06 · Putting it together</p>
+<h2 style="font-family:'Domine', Georgia, serif; font-size:64px; font-weight:700; line-height:1.1; color:#15233F">See all three in a real story</h2>
+</div>
+<p style="font-size:40px; line-height:1.5; color:#15233F; background:#FFFDF9; border:2px solid #E6DFD0; border-radius:20px; padding:32px 48px">Yesterday I bought <span style="color:#2A5BC4"><b>a</b></span> new phone and <span style="color:#2A5BC4"><b>an</b></span> umbrella. <span style="color:#A2470F"><b>The</b></span> phone is great, but <span style="color:#A2470F"><b>the</b></span> umbrella broke on <span style="color:#A2470F"><b>the</b></span> first day. I took it back to <span style="color:#A2470F"><b>the</b></span> shop near my house. <span style="color:#A2470F"><b>The</b></span> manager was very kind and gave me <span style="color:#2A5BC4"><b>a</b></span> new one. <span style="color:#5E6675"><b>Ø</b></span> Good service is rare!</p>
+<div style="display:flex; flex-direction:row; gap:24px">
+<div style="flex:1; display:flex; flex-direction:column; gap:8px; background:#E4EBFA; padding:28px; border-radius:16px">
+<p style="font-size:32px; font-weight:800; line-height:1.3; color:#2A5BC4">a phone, an umbrella</p>
+<p style="font-size:24px; line-height:1.4; color:#15233F">First mention: new information.</p>
+</div>
+<div style="flex:1; display:flex; flex-direction:column; gap:8px; background:#FBE8DA; padding:28px; border-radius:16px">
+<p style="font-size:32px; font-weight:800; line-height:1.3; color:#A2470F">The phone, the umbrella</p>
+<p style="font-size:24px; line-height:1.4; color:#15233F">Second mention: now we know which.</p>
+</div>
+<div style="flex:1; display:flex; flex-direction:column; gap:8px; background:#FBE8DA; padding:28px; border-radius:16px">
+<p style="font-size:32px; font-weight:800; line-height:1.3; color:#A2470F">the first day, the shop</p>
+<p style="font-size:24px; line-height:1.4; color:#15233F">“first” and “near my house” make them specific.</p>
+</div>
+<div style="flex:1; display:flex; flex-direction:column; gap:8px; background:#ECEAE6; padding:28px; border-radius:16px">
+<p style="font-size:32px; font-weight:800; line-height:1.3; color:#5E6675">Ø good service</p>
+<p style="font-size:24px; line-height:1.4; color:#15233F">A general idea: no article.</p>
+</div>
+</div>
+<p style="position:absolute; left:128px; bottom:64px; width:1200px; font-size:24px; color:#636B78">English Articles · A, An &amp; The</p>
+<p style="position:absolute; right:128px; bottom:64px; width:200px; font-size:24px; color:#636B78; text-align:right">18</p>
+<aside>Let's read a short story together and watch the articles. "A new phone" and "an umbrella" are new information, so we use a / an. After that, the listener knows which phone and which umbrella, so they become "the phone" and "the umbrella". "The first day" takes "the" because of the word "first". "The shop near my house" is made specific by "near my house". "The manager" is the manager of that shop, so we both know who. Finally, "good service" is a general idea, so it has no article.</aside>
+</section>
+<section id="quiz" data-transition="fade" style="background:#FAF7F0; color:#15233F; font-family:'Nunito Sans', Arial, sans-serif; padding:128px 128px 160px; display:flex; flex-direction:column; gap:40px">
+<div style="display:flex; flex-direction:column; gap:12px">
+<p style="font-size:24px; font-weight:800; letter-spacing:3px; text-transform:uppercase; color:#636B78">06 · Practice</p>
+<h2 style="font-family:'Domine', Georgia, serif; font-size:64px; font-weight:700; line-height:1.1; color:#15233F">Your turn: a, an, the or Ø?</h2>
+<p style="font-size:32px; line-height:1.4; color:#3F4A5C">Choose the right article for each gap. The answers are on the next slide.</p>
+</div>
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:20px">
+<div style="display:flex; flex-direction:row; gap:24px; align-items:center; background:#FFFDF9; border:2px solid #E6DFD0; padding:24px 28px; border-radius:16px">
+<p style="width:56px; height:56px; border-radius:50%; background:#15233F; color:#F4EFE4; font-size:24px; font-weight:800; line-height:2.33; text-align:center">1</p>
+<p style="flex:1; font-size:32px; line-height:1.35">I need ______ umbrella.</p>
+</div>
+<div style="display:flex; flex-direction:row; gap:24px; align-items:center; background:#FFFDF9; border:2px solid #E6DFD0; padding:24px 28px; border-radius:16px">
+<p style="width:56px; height:56px; border-radius:50%; background:#15233F; color:#F4EFE4; font-size:24px; font-weight:800; line-height:2.33; text-align:center">5</p>
+<p style="flex:1; font-size:32px; line-height:1.35">Could you open ______ window?</p>
+</div>
+<div style="display:flex; flex-direction:row; gap:24px; align-items:center; background:#FFFDF9; border:2px solid #E6DFD0; padding:24px 28px; border-radius:16px">
+<p style="width:56px; height:56px; border-radius:50%; background:#15233F; color:#F4EFE4; font-size:24px; font-weight:800; line-height:2.33; text-align:center">2</p>
+<p style="flex:1; font-size:32px; line-height:1.35">______ moon is very bright tonight.</p>
+</div>
+<div style="display:flex; flex-direction:row; gap:24px; align-items:center; background:#FFFDF9; border:2px solid #E6DFD0; padding:24px 28px; border-radius:16px">
+<p style="width:56px; height:56px; border-radius:50%; background:#15233F; color:#F4EFE4; font-size:24px; font-weight:800; line-height:2.33; text-align:center">6</p>
+<p style="flex:1; font-size:32px; line-height:1.35">We waited for ______ hour.</p>
+</div>
+<div style="display:flex; flex-direction:row; gap:24px; align-items:center; background:#FFFDF9; border:2px solid #E6DFD0; padding:24px 28px; border-radius:16px">
+<p style="width:56px; height:56px; border-radius:50%; background:#15233F; color:#F4EFE4; font-size:24px; font-weight:800; line-height:2.33; text-align:center">3</p>
+<p style="flex:1; font-size:32px; line-height:1.35">She is ______ university student.</p>
+</div>
+<div style="display:flex; flex-direction:row; gap:24px; align-items:center; background:#FFFDF9; border:2px solid #E6DFD0; padding:24px 28px; border-radius:16px">
+<p style="width:56px; height:56px; border-radius:50%; background:#15233F; color:#F4EFE4; font-size:24px; font-weight:800; line-height:2.33; text-align:center">7</p>
+<p style="flex:1; font-size:32px; line-height:1.35">My brother plays ______ guitar.</p>
+</div>
+<div style="display:flex; flex-direction:row; gap:24px; align-items:center; background:#FFFDF9; border:2px solid #E6DFD0; padding:24px 28px; border-radius:16px">
+<p style="width:56px; height:56px; border-radius:50%; background:#15233F; color:#F4EFE4; font-size:24px; font-weight:800; line-height:2.33; text-align:center">4</p>
+<p style="flex:1; font-size:32px; line-height:1.35">I usually have ______ breakfast at 8.</p>
+</div>
+<div style="display:flex; flex-direction:row; gap:24px; align-items:center; background:#FFFDF9; border:2px solid #E6DFD0; padding:24px 28px; border-radius:16px">
+<p style="width:56px; height:56px; border-radius:50%; background:#15233F; color:#F4EFE4; font-size:24px; font-weight:800; line-height:2.33; text-align:center">8</p>
+<p style="flex:1; font-size:32px; line-height:1.35">______ honesty is very important.</p>
+</div>
+</div>
+<p style="position:absolute; left:128px; bottom:64px; width:1200px; font-size:24px; color:#636B78">English Articles · A, An &amp; The</p>
+<p style="position:absolute; right:128px; bottom:64px; width:200px; font-size:24px; color:#636B78; text-align:right">19</p>
+<aside>Now it's your turn. Read each sentence and choose a, an, the, or no article (Ø). Take about two minutes. Think about the rules: is it the first sound? Is it one countable thing? Do we both know which one? Is it general? Then go to the next slide to check your answers.</aside>
+</section>
+<section id="answers" data-transition="fade" style="background:#FAF7F0; color:#15233F; font-family:'Nunito Sans', Arial, sans-serif; padding:128px 128px 160px; display:flex; flex-direction:column; gap:40px">
+<div style="display:flex; flex-direction:column; gap:12px">
+<p style="font-size:24px; font-weight:800; letter-spacing:3px; text-transform:uppercase; color:#636B78">06 · Practice</p>
+<h2 style="font-family:'Domine', Georgia, serif; font-size:64px; font-weight:700; line-height:1.1; color:#15233F">Answers, with the reason</h2>
+</div>
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:20px">
+<div style="display:flex; flex-direction:row; gap:24px; align-items:center; background:#FFFDF9; border:2px solid #E6DFD0; padding:20px 28px; border-radius:16px">
+<p style="width:56px; height:56px; border-radius:50%; background:#15233F; color:#F4EFE4; font-size:24px; font-weight:800; line-height:2.33; text-align:center">1</p>
+<div style="flex:1; display:flex; flex-direction:column; gap:4px">
+<p style="font-size:32px; line-height:1.35">I need <span style="color:#2A5BC4"><b>an</b></span> umbrella.</p>
+<p style="font-size:24px; line-height:1.4; color:#3F4A5C">“umbrella” starts with a vowel sound.</p>
+</div>
+</div>
+<div style="display:flex; flex-direction:row; gap:24px; align-items:center; background:#FFFDF9; border:2px solid #E6DFD0; padding:20px 28px; border-radius:16px">
+<p style="width:56px; height:56px; border-radius:50%; background:#15233F; color:#F4EFE4; font-size:24px; font-weight:800; line-height:2.33; text-align:center">5</p>
+<div style="flex:1; display:flex; flex-direction:column; gap:4px">
+<p style="font-size:32px; line-height:1.35">Could you open <span style="color:#A2470F"><b>the</b></span> window?</p>
+<p style="font-size:24px; line-height:1.4; color:#3F4A5C">We both know which window.</p>
+</div>
+</div>
+<div style="display:flex; flex-direction:row; gap:24px; align-items:center; background:#FFFDF9; border:2px solid #E6DFD0; padding:20px 28px; border-radius:16px">
+<p style="width:56px; height:56px; border-radius:50%; background:#15233F; color:#F4EFE4; font-size:24px; font-weight:800; line-height:2.33; text-align:center">2</p>
+<div style="flex:1; display:flex; flex-direction:column; gap:4px">
+<p style="font-size:32px; line-height:1.35"><span style="color:#A2470F"><b>The</b></span> moon is very bright tonight.</p>
+<p style="font-size:24px; line-height:1.4; color:#3F4A5C">There is only one moon.</p>
+</div>
+</div>
+<div style="display:flex; flex-direction:row; gap:24px; align-items:center; background:#FFFDF9; border:2px solid #E6DFD0; padding:20px 28px; border-radius:16px">
+<p style="width:56px; height:56px; border-radius:50%; background:#15233F; color:#F4EFE4; font-size:24px; font-weight:800; line-height:2.33; text-align:center">6</p>
+<div style="flex:1; display:flex; flex-direction:column; gap:4px">
+<p style="font-size:32px; line-height:1.35">We waited for <span style="color:#2A5BC4"><b>an</b></span> hour.</p>
+<p style="font-size:24px; line-height:1.4; color:#3F4A5C">Silent h, so a vowel sound.</p>
+</div>
+</div>
+<div style="display:flex; flex-direction:row; gap:24px; align-items:center; background:#FFFDF9; border:2px solid #E6DFD0; padding:20px 28px; border-radius:16px">
+<p style="width:56px; height:56px; border-radius:50%; background:#15233F; color:#F4EFE4; font-size:24px; font-weight:800; line-height:2.33; text-align:center">3</p>
+<div style="flex:1; display:flex; flex-direction:column; gap:4px">
+<p style="font-size:32px; line-height:1.35">She is <span style="color:#2A5BC4"><b>a</b></span> university student.</p>
+<p style="font-size:24px; line-height:1.4; color:#3F4A5C">“university” starts with a “you” sound.</p>
+</div>
+</div>
+<div style="display:flex; flex-direction:row; gap:24px; align-items:center; background:#FFFDF9; border:2px solid #E6DFD0; padding:20px 28px; border-radius:16px">
+<p style="width:56px; height:56px; border-radius:50%; background:#15233F; color:#F4EFE4; font-size:24px; font-weight:800; line-height:2.33; text-align:center">7</p>
+<div style="flex:1; display:flex; flex-direction:column; gap:4px">
+<p style="font-size:32px; line-height:1.35">My brother plays <span style="color:#A2470F"><b>the</b></span> guitar.</p>
+<p style="font-size:24px; line-height:1.4; color:#3F4A5C">Musical instruments take the.</p>
+</div>
+</div>
+<div style="display:flex; flex-direction:row; gap:24px; align-items:center; background:#FFFDF9; border:2px solid #E6DFD0; padding:20px 28px; border-radius:16px">
+<p style="width:56px; height:56px; border-radius:50%; background:#15233F; color:#F4EFE4; font-size:24px; font-weight:800; line-height:2.33; text-align:center">4</p>
+<div style="flex:1; display:flex; flex-direction:column; gap:4px">
+<p style="font-size:32px; line-height:1.35">I usually have <span style="color:#5E6675"><b>Ø</b></span> breakfast at 8.</p>
+<p style="font-size:24px; line-height:1.4; color:#3F4A5C">Meals take no article.</p>
+</div>
+</div>
+<div style="display:flex; flex-direction:row; gap:24px; align-items:center; background:#FFFDF9; border:2px solid #E6DFD0; padding:20px 28px; border-radius:16px">
+<p style="width:56px; height:56px; border-radius:50%; background:#15233F; color:#F4EFE4; font-size:24px; font-weight:800; line-height:2.33; text-align:center">8</p>
+<div style="flex:1; display:flex; flex-direction:column; gap:4px">
+<p style="font-size:32px; line-height:1.35"><span style="color:#5E6675"><b>Ø</b></span> Honesty is very important.</p>
+<p style="font-size:24px; line-height:1.4; color:#3F4A5C">A general idea (uncountable).</p>
+</div>
+</div>
+</div>
+<p style="position:absolute; left:128px; bottom:64px; width:1200px; font-size:24px; color:#636B78">English Articles · A, An &amp; The</p>
+<p style="position:absolute; right:128px; bottom:64px; width:200px; font-size:24px; color:#636B78; text-align:right">20</p>
+<aside>Let's check. One: an umbrella, because of the vowel sound. Two: the moon, because there is only one. Three: a university, because it starts with a "you" sound. Four: no article, because meals take no article. Five: the window, because we both know which one. Six: an hour, because the h is silent. Seven: the guitar, because musical instruments take "the". Eight: no article, because honesty is a general idea. How many did you get right? Seven or eight means you have understood articles very well.</aside>
+</section>
+<section id="summary" data-transition="fade" style="background:#FAF7F0; color:#15233F; font-family:'Nunito Sans', Arial, sans-serif; padding:128px 128px 160px; display:flex; flex-direction:column; gap:40px">
+<div style="display:flex; flex-direction:column; gap:12px">
+<p style="font-size:24px; font-weight:800; letter-spacing:3px; text-transform:uppercase; color:#636B78">06 · Summary</p>
+<h2 style="font-family:'Domine', Georgia, serif; font-size:64px; font-weight:700; line-height:1.1; color:#15233F">Cheat sheet</h2>
+</div>
+<div style="display:flex; flex-direction:row; gap:32px">
+<div style="flex:1; display:flex; flex-direction:column; gap:12px; background:#E4EBFA; padding:40px; border-radius:20px">
+<h3 style="font-family:'Domine', Georgia, serif; font-size:64px; font-weight:700; line-height:1.1; color:#2A5BC4">a / an</h3>
+<p style="font-size:24px; font-weight:800; letter-spacing:2px; text-transform:uppercase; color:#2A5BC4">Any one</p>
+<ul style="font-size:32px; line-height:1.6; color:#15233F">
+<li>one countable thing</li>
+<li>first mention</li>
+<li>jobs: a teacher</li>
+<li>“one” and “per”</li>
+<li>an + vowel sound</li>
+</ul>
+</div>
+<div style="flex:1; display:flex; flex-direction:column; gap:12px; background:#FBE8DA; padding:40px; border-radius:20px">
+<h3 style="font-family:'Domine', Georgia, serif; font-size:64px; font-weight:700; line-height:1.1; color:#A2470F">the</h3>
+<p style="font-size:24px; font-weight:800; letter-spacing:2px; text-transform:uppercase; color:#A2470F">The specific one</p>
+<ul style="font-size:32px; line-height:1.6; color:#15233F">
+<li>second mention</li>
+<li>only one: the sun</li>
+<li>we both know which</li>
+<li>superlatives: the best</li>
+<li>rivers, seas, the USA</li>
+</ul>
+</div>
+<div style="flex:1; display:flex; flex-direction:column; gap:12px; background:#ECEAE6; padding:40px; border-radius:20px">
+<h3 style="font-family:'Domine', Georgia, serif; font-size:64px; font-weight:700; line-height:1.1; color:#5E6675">Ø</h3>
+<p style="font-size:24px; font-weight:800; letter-spacing:2px; text-transform:uppercase; color:#5E6675">No article</p>
+<ul style="font-size:32px; line-height:1.6; color:#15233F">
+<li>general plurals: dogs</li>
+<li>general ideas: music</li>
+<li>meals, sports, languages</li>
+<li>most countries, cities</li>
+<li>go to school, by bus</li>
+</ul>
+</div>
+</div>
+<p style="position:absolute; left:128px; bottom:64px; width:1200px; font-size:24px; color:#636B78">English Articles · A, An &amp; The</p>
+<p style="position:absolute; right:128px; bottom:64px; width:200px; font-size:24px; color:#636B78; text-align:right">21</p>
+<aside>Here is everything on one page. Take a photo of this slide or write it in your notebook. A / an means any one: one countable thing, the first mention, jobs, "one" and "per", and "an" before a vowel sound. The means the specific one: the second mention, unique things, things we both know, superlatives, and some place names. No article means general: general plurals, general ideas, meals, sports, languages, most countries and cities, and fixed phrases like "go to school" and "by bus".</aside>
+</section>
+<section id="closing" data-transition="fade" style="background:#15233F; color:#F4EFE4; font-family:'Nunito Sans', Arial, sans-serif; padding:128px; display:flex; flex-direction:column; justify-content:center; gap:48px">
+<div style="display:flex; flex-direction:column; gap:12px">
+<p style="font-size:24px; font-weight:800; letter-spacing:4px; text-transform:uppercase; color:#F4A261">Remember</p>
+<h2 style="font-family:'Domine', Georgia, serif; font-size:64px; font-weight:700; line-height:1.1; color:#F4EFE4">Three questions, every time</h2>
+</div>
+<div style="display:flex; flex-direction:column; gap:32px">
+<div style="display:flex; flex-direction:row; gap:32px; align-items:baseline">
+<p style="width:80px; font-family:'Domine', Georgia, serif; font-size:64px; font-weight:700; line-height:1.1; color:#F4A261">1</p>
+<div style="flex:1; display:flex; flex-direction:column; gap:4px">
+<p style="font-size:40px; font-weight:800; line-height:1.3; color:#F4EFE4">Is it one countable thing, or plural / uncountable?</p>
+<p style="font-size:32px; line-height:1.4; color:#C9D1DE">Plural or uncountable nouns never take a / an.</p>
+</div>
+</div>
+<div style="display:flex; flex-direction:row; gap:32px; align-items:baseline">
+<p style="width:80px; font-family:'Domine', Georgia, serif; font-size:64px; font-weight:700; line-height:1.1; color:#F4A261">2</p>
+<div style="flex:1; display:flex; flex-direction:column; gap:4px">
+<p style="font-size:40px; font-weight:800; line-height:1.3; color:#F4EFE4">Do we both know which one?</p>
+<p style="font-size:32px; line-height:1.4; color:#C9D1DE">Yes → <span style="color:#F4A261"><b>the</b></span>.  No → <span style="color:#8DB0F5"><b>a / an</b></span>, or <span style="color:#B9C2D0"><b>Ø</b></span> for things in general.</p>
+</div>
+</div>
+<div style="display:flex; flex-direction:row; gap:32px; align-items:baseline">
+<p style="width:80px; font-family:'Domine', Georgia, serif; font-size:64px; font-weight:700; line-height:1.1; color:#F4A261">3</p>
+<div style="flex:1; display:flex; flex-direction:column; gap:4px">
+<p style="font-size:40px; font-weight:800; line-height:1.3; color:#F4EFE4">What is the first sound of the next word?</p>
+<p style="font-size:32px; line-height:1.4; color:#C9D1DE">Vowel sound → <span style="color:#8DB0F5"><b>an</b></span>.  Consonant sound → <span style="color:#8DB0F5"><b>a</b></span>.</p>
+</div>
+</div>
+</div>
+<p style="font-family:'Domine', Georgia, serif; font-size:40px; font-weight:700; color:#F4A261">Thank you! Any questions?</p>
+<aside>To finish, remember three questions. One: is the noun one countable thing, or is it plural or uncountable? Two: do we both know which one? If yes, use "the". If not, use a / an, or no article for things in general. Three: if you need a / an, what is the first sound of the next word? Practice these three questions every time you speak or write, and articles will soon become automatic. Thank you! Are there any questions?</aside>
+</section>
+</div>
+</main>
+<div class="notes" id="notes" hidden></div>
+<nav class="bar" aria-label="Slide controls">
+<button id="prev" aria-label="Previous slide">&#8249;</button>
+<span class="count" id="count"></span>
+<button id="next" aria-label="Next slide">&#8250;</button>
+<button id="notesBtn" aria-pressed="false">Notes</button>
+<button id="fsBtn">Full screen</button>
+<span class="hint">Use &larr; &rarr; keys</span>
+</nav>
+<script>
+(function () {
+  var deck = document.getElementById('deck');
+  var slides = Array.prototype.slice.call(deck.children);
+  var count = document.getElementById('count');
+  var notes = document.getElementById('notes');
+  var notesBtn = document.getElementById('notesBtn');
+  var i = 0;
+
+  function fit() {
+    var stage = deck.parentElement;
+    var s = Math.min(stage.clientWidth / 1920, stage.clientHeight / 1080) * 0.96;
+    deck.style.transform = 'scale(' + s + ')';
+  }
+
+  function show(n) {
+    i = Math.max(0, Math.min(slides.length - 1, n));
+    slides.forEach(function (el, k) { el.classList.toggle('active', k === i); });
+    count.textContent = (i + 1) + ' / ' + slides.length;
+    var aside = slides[i].querySelector('aside');
+    notes.textContent = aside ? aside.textContent : '';
+    if (location.hash !== '#' + (i + 1)) history.replaceState(null, '', '#' + (i + 1));
+  }
+
+  document.getElementById('prev').onclick = function () { show(i - 1); };
+  document.getElementById('next').onclick = function () { show(i + 1); };
+  notesBtn.onclick = function () {
+    notes.hidden = !notes.hidden;
+    notesBtn.setAttribute('aria-pressed', String(!notes.hidden));
+  };
+  document.getElementById('fsBtn').onclick = function () {
+    if (document.fullscreenElement) document.exitFullscreen();
+    else if (document.documentElement.requestFullscreen) document.documentElement.requestFullscreen();
+  };
+
+  document.addEventListener('keydown', function (e) {
+    if (['ArrowRight', 'PageDown', ' '].indexOf(e.key) >= 0) { e.preventDefault(); show(i + 1); }
+    else if (['ArrowLeft', 'PageUp'].indexOf(e.key) >= 0) { e.preventDefault(); show(i - 1); }
+    else if (e.key === 'Home') show(0);
+    else if (e.key === 'End') show(slides.length - 1);
+    else if (e.key === 'n' || e.key === 'N') notesBtn.click();
+    else if (e.key === 'f' || e.key === 'F') document.getElementById('fsBtn').click();
+  });
+
+  var x0 = null;
+  deck.parentElement.addEventListener('touchstart', function (e) { x0 = e.touches[0].clientX; }, { passive: true });
+  deck.parentElement.addEventListener('touchend', function (e) {
+    if (x0 === null) return;
+    var dx = e.changedTouches[0].clientX - x0;
+    if (Math.abs(dx) > 40) show(i + (dx < 0 ? 1 : -1));
+    x0 = null;
+  });
+  deck.parentElement.addEventListener('click', function (e) {
+    if (e.target.closest('a')) return;
+    show(i + (e.clientX > window.innerWidth / 2 ? 1 : -1));
+  });
+
+  window.addEventListener('resize', fit);
+  fit();
+  show((parseInt(location.hash.slice(1), 10) || 1) - 1);
+})();
+</script>
+</body>
+</html>
